@@ -19,7 +19,7 @@ try {
 
         // Prepare SQL query to insert the feedback into the database
         $sql = "INSERT INTO feedback (studentName, course, feedback, rating) 
-                VALUES (:studentName, :course, :feedback, :rating)";
+                VALUES (:pooja, :cse, :good, :1)";
 
         $stmt = $pdo->prepare($sql);
         $stmt->bindParam(':studentName', $studentName);
